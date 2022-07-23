@@ -1,4 +1,5 @@
-make: *** No targets.  Stop.
-
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/ekaterina/frontend-project-lvl1'
+npm ci
 make: Leaving directory `/Users/ekaterina/frontend-project-lvl1'
  

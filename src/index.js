@@ -1,12 +1,21 @@
 import readlineSync from 'readline-sync';
 
-console.log('Welcome to the Brain Games!');
+export default generalGame = (taskGame) => {
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hi, ${userName}!`);
+  console.log(taskGame);
 
-export const userName = readlineSync.question('May I have your name? ');
-export default userName;
-const Randnumber = () => Math.floor(Math.random() * 100);
-const number = Randnumber();
-const youAnswer = readlineSync.question('You answer: ');
-console.log(`'${youAnswer}' is wrong answer ;(. Corrrect answer was '${answer}'. \nLet's try again, ${userName}!`);
-console.log(`Congratulations, ${userName}!`);
-if ()
+  for (let i = 1; i <= 3; i += 1) {
+    const Randnumber = () => Math.floor(Math.random() * 10);
+    console.log(gameQuestion);
+    console.log(youAnswer);
+  }
+  if (youAnswer === answer) {
+    console.log('Correct!');
+  } else {
+    console.log(`'${youAnswer}' is wrong answer ;(. Corrrect answer was '${answer}'. \nLet's try again, ${userName}!`);
+    return;
+  }
+  console.log(`Congratulations, ${userName}!`);
+};

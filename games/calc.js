@@ -1,15 +1,18 @@
 import generalGame from '../src/index.js';
 
+export default generalGame = () => {
 const taskGame = 'What is the result of the expression?';
-for (let i = 1; i <= 3; i += 1) {
+const gameQuestion = readlineSync.question(`Question: ${number}`);
+const youAnswer = readlineSync.question('Your answer: ');
+
   const Randnumber = () => Math.floor(Math.random() * 10);
   const number1 = Randnumber();
   const number2 = Randnumber();
   const sign = ['-', '+', '*'];
   const signs = Math.floor(Math.random() * sign.length);
   const signsRand = sign[signs];
-  const example = `${number1} ${signsRand} ${number2}`;
-
+  const number = `${number1} ${signsRand} ${number2}`;
+  const gameRound = () => {
   let answer = 0;
   switch (signsRand) {
     case '-':
@@ -24,6 +27,6 @@ for (let i = 1; i <= 3; i += 1) {
     default:
       answer = null;
   }
-  const youAnswer = (Number(youAnswer));
+  const round = (Number(youAnswer));
+  return(number, round)
 };
-;

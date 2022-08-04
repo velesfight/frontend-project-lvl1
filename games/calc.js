@@ -3,8 +3,6 @@ import generalGame from '../src/index.js';
 
 const generalGame = (taskGame, gameRound) => {
 const taskGame = 'What is the result of the expression?';
-const gameQuestion = readlineSync.question(`Question: ${number}`);
-const youAnswer = readlineSync.question('Your answer: ');
   const gameRound = () => {
   const Randnumber = () => Math.floor(Math.random() * 10);
   const number1 = Randnumber();

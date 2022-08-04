@@ -5,7 +5,6 @@ export default generalGame = (taskGame, gameRound) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hi, ${userName}!`);
   console.log(taskGame);
-
   for (let i = 1; i <= 3; i += 1) {
     const Randnumber = () => Math.floor(Math.random() * 10);
     console.log(gameQuestion);

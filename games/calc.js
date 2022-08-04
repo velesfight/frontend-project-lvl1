@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import generalGame from '../src/index.js';
 
-export default generalGame = (taskGame, gameRound) => {
+const generalGame = (taskGame, gameRound) => {
 const taskGame = 'What is the result of the expression?';
 const gameQuestion = readlineSync.question(`Question: ${number}`);
 const youAnswer = readlineSync.question('Your answer: ');
@@ -28,6 +28,6 @@ const youAnswer = readlineSync.question('Your answer: ');
       answer = null;
   }
     const round = (Number(youAnswer));
-  return generalGame(number, round);
+  return gameRound(number, round);
 }
-
+};

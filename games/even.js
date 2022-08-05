@@ -1,7 +1,5 @@
-import readlineSync from 'readline-sync';
 import generalGame from '../src/index.js';
 
-const generalGame = (taskGame, gameRound) => {
 const taskGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const gameRound = () => {
@@ -10,5 +8,5 @@ const gameRound = () => {
   const numberEven = (number % 2 === 0);
   const round = numberEven ? 'yes' : 'no';
   return gameRound(number, round);
-}
 };
+generalGame(taskGame, gameRound);

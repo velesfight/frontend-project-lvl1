@@ -1,9 +1,8 @@
-import readlineSync from 'readline-sync';
 import generalGame from '../src/index.js';
 
-const generalGame = (taskGame, gameRound) => {
 const taskGame = 'What is the result of the expression?';
-  const gameRound = () => {
+
+const gameRound = () => {
   const Randnumber = () => Math.floor(Math.random() * 10);
   const number1 = Randnumber();
   const number2 = Randnumber();
@@ -11,6 +10,7 @@ const taskGame = 'What is the result of the expression?';
   const signs = Math.floor(Math.random() * sign.length);
   const signsRand = sign[signs];
   const number = `${number1} ${signsRand} ${number2}`;
+  const round = (Number(number));
   let answer = 0;
   switch (signsRand) {
     case '-':
@@ -24,8 +24,6 @@ const taskGame = 'What is the result of the expression?';
       break;
     default:
       answer = null;
-  }
-    const round = (Number(youAnswer));
-  return gameRound(number, round);
-}
+   return(number, round);
 };
+generalGame(taskGame, gameRound);

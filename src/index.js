@@ -6,8 +6,8 @@ export default generalGame = (taskGame, gameRound) => {
   console.log(`Hi, ${userName}!`);
   console.log(taskGame);
 
-  for (let i = 1; i <= 3; i += 1) {
-  const gameRound = () => {
+  const gameRound = (number, round) => {
+    for (let i = 1; i <= 3; i += 1) {
     const Randnumber = () => Math.floor(Math.random() * 10);
     const gameQuestion = readlineSync.question(`Question: ${number}`);
     const youAnswer = readlineSync.question('Your answer: ');
@@ -19,7 +19,8 @@ export default generalGame = (taskGame, gameRound) => {
       console.log(`'${youAnswer}' is wrong answer ;(. Corrrect answer was '${round}'. \nLet's try again, ${userName}!`);
       return;
     }
-  console.log(`Congratulations, ${userName}!`);
   }
-  gameRound(number, round);
+  console.log(gameRound);
 }
+  console.log(`Congratulations, ${userName}!`);
+};

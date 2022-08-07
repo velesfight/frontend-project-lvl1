@@ -10,7 +10,6 @@ const gameRound = () => {
   const signs = Math.floor(Math.random() * sign.length);
   const signsRand = sign[signs];
   const number = `${number1} ${signsRand} ${number2}`;
-  const round = (Number(number));
   let answer = 0;
   switch (signsRand) {
     case '-':
@@ -24,6 +23,8 @@ const gameRound = () => {
       break;
     default:
       answer = null;
-   return(number, round);
+  }
+  const round = String(answer);
+  return gameRound(number, round);
 };
 generalGame(taskGame, gameRound);

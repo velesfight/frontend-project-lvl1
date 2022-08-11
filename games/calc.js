@@ -25,6 +25,6 @@ const gameRound = () => {
       answer = null;
   }
   const round = String(answer);
-  return gameRound(number, round);
+  return (number, round);
 };
 generalGame(taskGame, gameRound);

@@ -7,6 +7,6 @@ const gameRound = () => {
   const number = Randnumber();
   const numberEven = (number % 2 === 0);
   const round = numberEven ? 'yes' : 'no';
-  return gameRound(number, round);
+  return (number, round);
 };
 generalGame(taskGame, gameRound);

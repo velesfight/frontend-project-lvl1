@@ -6,12 +6,11 @@ const generalGame = (taskGame, gameRound) => {
   console.log(`Hi, ${userName}!`);
   console.log(taskGame);
 
-  for (let i = 1; i <= 3; i += 1) {
+  for (let i = 0; i <= 3; i += 1) {
     const [number, round] = gameRound();
-    const gameQuestion = readlineSync.question(`Question: ${number}`);
-    const youAnswer = readlineSync.question('Your answer: ');
+    const gameQuestion = `Question: ${number}`;
     console.log(gameQuestion);
-    console.log(youAnswer);
+    const youAnswer = readlineSync.question('Your answer: ');
     if (youAnswer === round) {
       console.log('Correct!');
     } else {

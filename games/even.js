@@ -9,4 +9,6 @@ const gameRound = () => {
   const round = numberEven ? 'yes' : 'no';
   return (number, round);
 };
-generalGame(taskGame, gameRound);
+export default function letsGo() {
+  generalGame(taskGame, gameRound);
+}

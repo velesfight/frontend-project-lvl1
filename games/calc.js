@@ -1,13 +1,13 @@
 import generalGame from '../src/index.js';
+import getRandomInt from '../src/fails.js';
 
 const taskGame = 'What is the result of the expression?';
 
 const gameRound = () => {
-  const Randnumber = () => Math.floor(Math.random() * 10);
-  const number1 = Randnumber();
-  const number2 = Randnumber();
+  const number1 = getRandomInt(10);
+  const number2 = getRandomInt(10);
   const sign = ['-', '+', '*'];
-  const signs = Math.floor(Math.random() * sign.length);
+  const signs = getRandomInt(sign.length - 1);
   const signsRand = sign[signs];
   const number = `${number1} ${signsRand} ${number2}`;
   let answer = 0;
@@ -27,4 +27,6 @@ const gameRound = () => {
   const round = String(answer);
   return (number, round);
 };
-generalGame(taskGame, gameRound);
+export default function letsGo() {
+  generalGame(taskGame, gameRound);
+}

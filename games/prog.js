@@ -20,4 +20,4 @@ const numProg = (number1, step, lenghtMas) => {
     const point = '..';
     const index = getRandomInt(progr.lenght - 1);
     const number = progression.splice(index, 1, point);
-    const round = ;
+;

@@ -25,7 +25,7 @@ const gameRound = () => {
       answer = null;
   }
   const round = String(answer);
-  return (number, round);
+  return [number, round];
 };
 export default function letsGo() {
   generalGame(taskGame, gameRound);

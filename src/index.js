@@ -7,14 +7,14 @@ const generalGame = (taskGame, gameRound) => {
   console.log(taskGame);
 
   for (let i = 0; i < 3; i += 1) {
-    const [number, round] = gameRound();
-    const gameQuestion = `Question: ${number}`;
+    const [questionUser, answerUser] = gameRound();
+    const gameQuestion = `Question: ${questionUser}`;
     console.log(gameQuestion);
     const youAnswer = readlineSync.question('Your answer: ');
-    if (youAnswer === round) {
+    if (youAnswer === answerUser) {
       console.log('Correct!');
     } else {
-      console.log(`'${youAnswer}' is wrong answer ;(. Corrrect answer was '${round}'. \nLet's try again, ${userName}!`);
+      console.log(`'${youAnswer}' is wrong answer ;(. Corrrect answer was '${answerUser}'. \nLet's try again, ${userName}!`);
       return;
     }
   }

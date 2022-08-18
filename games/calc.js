@@ -9,7 +9,7 @@ const gameRound = () => {
   const sign = ['-', '+', '*'];
   const signs = getRandomInt(sign.length - 1);
   const signsRand = sign[signs];
-  const number = `${number1} ${signsRand} ${number2}`;
+  const questionUser = `${number1} ${signsRand} ${number2}`;
   let answer = 0;
   switch (signsRand) {
     case '-':
@@ -24,8 +24,8 @@ const gameRound = () => {
     default:
       answer = null;
   }
-  const round = String(answer);
-  return [number, round];
+  const answerUser = String(answer);
+  return [questionUser, answerUser];
 };
 export default function letsGo() {
   generalGame(taskGame, gameRound);

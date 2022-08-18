@@ -11,9 +11,9 @@ const NOD = (a, b) => {
 const gameRound = () => {
   const number1 = getRandomInt(100);
   const number2 = getRandomInt(100);
-  const number = `${number1} ${number2}`;
-  const round = String(NOD(number1, number2));
-  return [number, round];
+  const questionUser = `${number1} ${number2}`;
+  const answerUser = String(NOD(number1, number2));
+  return [questionUser, answerUser];
 };
 export default function letsGo() {
   generalGame(taskGame, gameRound);

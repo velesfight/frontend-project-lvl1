@@ -4,6 +4,6 @@
 
 https://asciinema.org/a/mDCiKcWlNdy7oxiiBLZ8ueZCW
 
-https://asciinema.org/connect/e58b58c1-5a27-4f10-a3d7-f37fd99a785f
+https://asciinema.org/a/dqxz8GF0GR98THOCIjDT5fJ0h
 
 https://asciinema.org/a/9IqbzPEUJE9YPgnPcwToNqW1W

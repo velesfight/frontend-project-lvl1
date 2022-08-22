@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import letsGo from '../games/prog.js';
+import letsGo from '../games/progression.js';
 
 letsGo();

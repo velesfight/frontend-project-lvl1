@@ -2,4 +2,4 @@
 
 import userName from '../games/cli.js';
 
-console.log(`Hi, ${userName}!`);
+console.log(`Hello, ${userName}!`);

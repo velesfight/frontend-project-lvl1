@@ -42,14 +42,14 @@ https://asciinema.org/a/dqxz8GF0GR98THOCIjDT5fJ0h
 
 4.Arithmetic progression.
 
-The "brain-prog' command is used to start the game.
+The "brain-progression' command is used to start the game.
 
 Task: determine the missed number.
 
 Example:
 
-https://asciinema.org/a/9IqbzPEUJE9YPgnPcwToNqW1W
-[![asciicast](https://asciinema.org/a/9IqbzPEUJE9YPgnPcwToNqW1W.svg)](https://asciinema.org/a/9IqbzPEUJE9YPgnPcwToNqW1W)
+https://asciinema.org/a/XSys5F8a8GgJLtZsRckdy9V61
+[![asciicast](https://asciinema.org/a/XSys5F8a8GgJLtZsRckdy9V61.svg)](https://asciinema.org/a/XSys5F8a8GgJLtZsRckdy9V61)
 
 5.Is it a prime number?
 

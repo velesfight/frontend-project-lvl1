@@ -24,6 +24,7 @@ const gameRound = () => {
   const questionUser = progression.join(' ');
   return [questionUser, String(answerUser)];
 };
+
 export default function letsGo() {
   generalGame(taskGame, gameRound);
 }

@@ -11,6 +11,7 @@ The "lpm limk" command is used to install the games
 The "brain-even" command is used to start the game.
 
 Task: Answer "yes" if the number is even, otherwise answer "no".
+
 Example:
 
 https://asciinema.org/a/5tBfdR4XkmPCOqdUOMyOxkwD2

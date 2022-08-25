@@ -1,22 +1,22 @@
-import generalGame from '../src/index.js';
-import getRandomInt from '../src/fails.js';
+import generalGame from '../index.js';
+import getRandomInt from '../generalFail.js';
 
 const taskGame = 'What number is missing in the progression?';
 
-const numProg = (number1, step, lenght) => {
+const isProgression = (number, step, lenght) => {
   const progr = [];
   for (let i = 0; i < lenght; i += 1) {
-    const nextNumber = number1 + i * step;
+    const nextNumber = number + i * step;
     progr.push(nextNumber);
   }
   return progr;
 };
 
 const gameRound = () => {
-  const number1 = getRandomInt(10);
+  const number = getRandomInt(10);
   const lenght = 6;
   const step = 2;
-  const progression = numProg(number1, step, lenght);
+  const progression = isProgression(number, step, lenght);
   const point = '..';
   const index = getRandomInt(lenght);
   const answerUser = progression[index];
@@ -25,6 +25,7 @@ const gameRound = () => {
   return [questionUser, String(answerUser)];
 };
 
-export default function letsGo() {
+const startGameProgres = () => {
   generalGame(taskGame, gameRound);
-}
+};
+export default startGameProgres;

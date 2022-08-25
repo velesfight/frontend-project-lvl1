@@ -6,7 +6,8 @@ const generalGame = (taskGame, gameRound) => {
   console.log(`Hi, ${userName}!`);
   console.log(taskGame);
 
-  for (let i = 0; i < 3; i += 1) {
+  const roundCount = 3;
+  for (let i = 0; i < roundCount; i += 1) {
     const [questionUser, answerUser] = gameRound();
     const gameQuestion = `Question: ${questionUser}`;
     console.log(gameQuestion);

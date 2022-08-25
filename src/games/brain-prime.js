@@ -1,8 +1,8 @@
-import generalGame from '../src/index.js';
-import getRandomInt from '../src/fails.js';
+import generalGame from '../index.js';
+import getRandomInt from '../generalFail.js';
 
 const taskGame = 'Answer "yes" if given number is prime. Otherwise answer "no"';
-const primeNum = (num) => {
+const isPrime = (num) => {
   if (num < 2) {
     return false;
   }
@@ -16,11 +16,12 @@ const primeNum = (num) => {
 
 const gameRound = () => {
   const number1 = getRandomInt(50);
-  const answerUser = primeNum(number1) ? 'yes' : 'no';
+  const answerUser = isPrime(number1) ? 'yes' : 'no';
   const questionUser = String(number1);
   return [questionUser, answerUser];
 };
 
-export default function letsGo() {
+const startGamePrime = () => {
   generalGame(taskGame, gameRound);
-}
+};
+export default startGamePrime;

@@ -1,5 +1,5 @@
-import generalGame from '../src/index.js';
-import getRandomInt from '../src/fails.js';
+import generalGame from '../index.js';
+import getRandomInt from '../fails.js';
 
 const taskGame = 'What is the result of the expression?';
 
@@ -27,6 +27,7 @@ const gameRound = () => {
   const answerUser = String(answer);
   return [questionUser, answerUser];
 };
-export default function letsGo() {
+const startGameCalc = () => {
   generalGame(taskGame, gameRound);
-}
+};
+export default startGameCalc;

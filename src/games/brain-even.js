@@ -1,4 +1,4 @@
-import generalGame from '../src/index.js';
+import generalGame from '../index.js';
 
 const taskGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -9,6 +9,7 @@ const gameRound = () => {
   const answerUser = numberEven ? 'yes' : 'no';
   return [questionUser, answerUser];
 };
-export default function letsGo() {
+const startGameEven = () => {
   generalGame(taskGame, gameRound);
-}
+};
+export default startGameEven;

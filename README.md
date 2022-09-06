@@ -13,8 +13,8 @@ The `brain-even` command is used to start the game.
 
 Task: Answer "yes" if the number is even, otherwise answer "no".
 
-[Example:](https://asciinema.org/a/5tBfdR4XkmPCOqdUOMyOxkwD2)
-[![asciicast](https://asciinema.org/a/5tBfdR4XkmPCOqdUOMyOxkwD2.svg)](https://asciinema.org/a/5tBfdR4XkmPCOqdUOMyOxkwD2)
+[Example:]https://asciinema.org/a/b4O1cTIeY8H3naa43eNkquRYU
+[![asciicast](https://asciinema.org/a/b4O1cTIeY8H3naa43eNkquRYU.svg)](https://asciinema.org/a/b4O1cTIeY8H3naa43eNkquRYU)
 
 
 ### 2.Calculator.
@@ -23,8 +23,9 @@ The `brain-calc` command is used to start the game.
 
 Task: calculate the result of an expression.
 
-[Example:](https://asciinema.org/a/UAv2uq9oJqAtae8TzjLuY3Gar)
-[![asciicast](https://asciinema.org/a/UAv2uq9oJqAtae8TzjLuY3Gar.svg)](https://asciinema.org/a/UAv2uq9oJqAtae8TzjLuY3Gar)
+[Example:]https://asciinema.org/a/YWnuiKWVsI7Uomz0nzr97C28g
+[![asciicast](https://asciinema.org/a/YWnuiKWVsI7Uomz0nzr97C28g.svg)](https://asciinema.org/a/YWnuiKWVsI7Uomz0nzr97C28g)
+
 
 ### 3.Greatest common divisor.
 
@@ -32,8 +33,17 @@ The `brain-gcd` command is used to start the game.
 
 Task: calculate the greatest common divisor of two numbers.
 
-[Example:](https://asciinema.org/a/dqxz8GF0GR98THOCIjDT5fJ0h)
-[![asciicast](https://asciinema.org/a/dqxz8GF0GR98THOCIjDT5fJ0h.svg)](https://asciinema.org/a/dqxz8GF0GR98THOCIjDT5fJ0h)
+[Example:]https://asciinema.org/a/u2LaXj7KoZSyr6BDHinLPR8xD
+[![asciicast](https://asciinema.org/a/u2LaXj7KoZSyr6BDHinLPR8xD.svg)](https://asciinema.org/a/u2LaXj7KoZSyr6BDHinLPR8xD)
+
+### 5.Is it a prime number?
+
+The `brain-prime` commands is used to start the game.
+
+Task: determine just a number or not.
+
+[Example:]https://asciinema.org/a/IuJJxeo4m3YlueMHEj7en16gg
+[![asciicast](https://asciinema.org/a/IuJJxeo4m3YlueMHEj7en16gg.svg)](https://asciinema.org/a/IuJJxeo4m3YlueMHEj7en16gg)
 
 ### 4.Arithmetic progression.
 
@@ -41,14 +51,5 @@ The `brain-progression` command is used to start the game.
 
 Task: determine the missed number.
 
-[Example:](https://asciinema.org/a/XSys5F8a8GgJLtZsRckdy9V61)
-[![asciicast](https://asciinema.org/a/XSys5F8a8GgJLtZsRckdy9V61.svg)](https://asciinema.org/a/XSys5F8a8GgJLtZsRckdy9V61)
-
-### 5.Is it a prime number?
-
-The `brain-prog` commands is used to start the game.
-
-Task: determine just a number or not.
-
-[Example:](https://asciinema.org/a/aqvVORXNh1xSwCVPnLnvmg3DW)
-[![asciicast](https://asciinema.org/a/aqvVORXNh1xSwCVPnLnvmg3DW.svg)](https://asciinema.org/a/aqvVORXNh1xSwCVPnLnvmg3DW)
+[Example:]https://asciinema.org/a/uy3mNkhqIio6FkbPSJfWgk25z
+[![asciicast](https://asciinema.org/a/uy3mNkhqIio6FkbPSJfWgk25z.svg)](https://asciinema.org/a/uy3mNkhqIio6FkbPSJfWgk25z)

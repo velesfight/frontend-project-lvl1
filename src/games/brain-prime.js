@@ -1,5 +1,5 @@
-import generalGame from '../index.js';
-import getRandomInt from '../generalFail.js';
+import runGame from '../index.js';
+import getRandomInt from '../support.js';
 
 const taskGame = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 const isPrime = (num) => {
@@ -15,13 +15,13 @@ const isPrime = (num) => {
 };
 
 const gameRound = () => {
-  const number1 = getRandomInt(50);
-  const answerUser = isPrime(number1) ? 'yes' : 'no';
-  const questionUser = String(number1);
-  return [questionUser, answerUser];
+  const number1 = getRandomInt(0, 50);
+  const answer = isPrime(number1) ? 'yes' : 'no';
+  const question = String(number1);
+  return [question, answer];
 };
 
 const startGamePrime = () => {
-  generalGame(taskGame, gameRound);
+  runGame(taskGame, gameRound);
 };
 export default startGamePrime;

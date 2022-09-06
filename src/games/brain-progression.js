@@ -1,31 +1,31 @@
-import generalGame from '../index.js';
-import getRandomInt from '../generalFail.js';
+import runGame from '../index.js';
+import getRandomInt from '../support.js';
 
 const taskGame = 'What number is missing in the progression?';
 
-const isProgression = (number, step, lenght) => {
-  const progr = [];
+const getProgression = (number, step, lenght) => {
+  const progression = [];
   for (let i = 0; i < lenght; i += 1) {
     const nextNumber = number + i * step;
-    progr.push(nextNumber);
+    progression.push(nextNumber);
   }
-  return progr;
+  return progression;
 };
 
 const gameRound = () => {
-  const number = getRandomInt(10);
-  const lenght = 6;
-  const step = 2;
-  const progression = isProgression(number, step, lenght);
-  const point = '..';
-  const index = getRandomInt(lenght);
-  const answerUser = progression[index];
-  progression[index] = point;
-  const questionUser = progression.join(' ');
-  return [questionUser, String(answerUser)];
+  const number = getRandomInt(0, 10);
+  const lenghtProgression = getRandomInt(5, 10);
+  const step = getRandomInt(2, 5);
+  const progression = getProgression(number, step, lenghtProgression);
+  const indexAnswer = getRandomInt(0, lenghtProgression - 1);
+  const placeholde = '..';
+  const answer = String(progression[indexAnswer]);
+  progression[indexAnswer] = placeholde;
+  const question = progression.join(' ');
+  return [question, answer];
 };
 
 const startGameProgres = () => {
-  generalGame(taskGame, gameRound);
+  runGame(taskGame, gameRound);
 };
 export default startGameProgres;

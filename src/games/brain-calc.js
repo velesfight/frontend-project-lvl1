@@ -1,9 +1,9 @@
-import generalGame from '../index.js';
-import getRandomInt from '../generalFail.js';
+import runGame from '../index.js';
+import getRandomInt from '../support.js';
 
 const taskGame = 'What is the result of the expression?';
 
-const calcExample = (num1, num2, simbol) => {
+const calculate = (num1, num2, simbol) => {
   switch (simbol) {
     case '-':
       return num1 - num2;
@@ -17,16 +17,16 @@ const calcExample = (num1, num2, simbol) => {
 };
 
 const gameRound = () => {
-  const number1 = getRandomInt(10);
-  const number2 = getRandomInt(10);
-  const sign = ['-', '+', '*'];
-  const signs = getRandomInt(sign.length - 1);
-  const signsRand = sign[signs];
-  const questionUser = `${number1} ${signsRand} ${number2}`;
-  const answerUser = String(calcExample(number1, number2, signsRand));
-  return [questionUser, answerUser];
+  const number1 = getRandomInt(0, 10);
+  const number2 = getRandomInt(0, 10);
+  const operators = ['-', '+', '*'];
+  const operatorIndex = getRandomInt(0, operators.length - 1);
+  const operator = operators[operatorIndex];
+  const question = `${number1} ${operator} ${number2}`;
+  const answer = String(calculate(number1, number2, operator));
+  return [question, answer];
 };
 const startGameCalc = () => {
-  generalGame(taskGame, gameRound);
+  runGame(taskGame, gameRound);
 };
 export default startGameCalc;
